@@ -1,4 +1,12 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"json",
+         "target":"..\/tilemaps\/map.json"
+        }
+    },
  "height":50,
  "infinite":false,
  "layers":[
@@ -134,7 +142,7 @@
         {
          "columns":12,
          "firstgid":1,
-         "image":"..\/tilesets\/town.png",
+         "image":"town.png",
          "imageheight":192,
          "imagewidth":192,
          "margin":0,

@@ -29,10 +29,18 @@ const config = {
   function create() {
     const map = this.make.tilemap({ key: 'map' });
     const tileset = map.addTilesetImage('1', 'tiles');
+
   
     map.createLayer('Tile Layer 1', tileset, 0, 0);
     const collisionLayer = map.createLayer('Collision', tileset, 0, 0);
     collisionLayer.setCollisionByProperty({ collides: true });
+
+    // collisionLayer.renderDebug(this.add.graphics(), {
+    //     tileColor: null,
+    //     collidingTileColor: new Phaser.Display.Color(255, 0, 0, 100),
+    //     faceColor: new Phaser.Display.Color(0, 255, 0, 255)
+    //   });
+      
   
     player = this.physics.add.sprite(100, 100, 'player', 0);
     this.physics.add.collider(player, collisionLayer);
